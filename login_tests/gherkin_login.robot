@@ -3,16 +3,14 @@ Documentation     A test suite with a single Gherkin style test.
 ...
 ...               This test is functionally identical to the example in
 ...               valid_login.robot file.
-Resource          resource.robot
+Resource  Resources/resource.robot
 
-Test Teardown     Close Browser
-
-*** Test Cases ***
-Valid Login
-    [Tags]    AGIS-XX
-    Given browser is opened to login page
-    When user "demo" logs in with password "mode"
-    Then welcome page should be open
+#*** Test Cases ***
+#Valid Login
+#    [Tags]    AGIS-XX
+#    Given browser is opened to login page
+#    When user "demo" logs in with password "mode"
+#    Then welcome page should be open
 
 *** Keywords ***
 Browser is opened to login page
