@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 # Replace with the path to your chromedriver executable
-chrome_driver_path = '/path/to/chromedriver'
+chrome_driver_path = '/Users/sonal/Code/WebDemo-master/docs/chromedriver'
 
 # URL for guru99 login page
 login_url = 'https://www.guru99.com/using-robot-api-selenium.html'
