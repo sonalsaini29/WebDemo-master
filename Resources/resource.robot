@@ -6,7 +6,7 @@ Documentation     A resource file with reusable keywords and variables.
 ...               by the imported SeleniumLibrary.
 Library           SeleniumLibrary
 
-Resource          Resources/xpath.robot
+Resource          /Users/sonal/Code/WebDemo-master/Resources/xpath.robot
 
 *** Variables ***
 ${BROWSER}        chrome
