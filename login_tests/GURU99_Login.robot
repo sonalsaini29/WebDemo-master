@@ -5,8 +5,8 @@ Documentation     A resource file with reusable keywords and variables.
 ...               domain specific language. They utilize keywords provided
 ...               by the imported SeleniumLibrary.
 
-Resource  Resources/resource.robot
-Resource  login_tests/gherkin_login.robot
+Resource  /Users/sonal/Code/WebDemo-master/Resources/resource.robot
+Resource  /Users/sonal/Code/WebDemo-master/login_tests/gherkin_login.robot
 
 
 *** Test Cases ***
