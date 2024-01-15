@@ -1,4 +1,7 @@
 from Resources.Variables import login_url
+from selenium import webdriver
+from selenium.webdriver import Chrome
+from selenium.webdriver.common.keys import Keys
 
 def login_config(login_url):
     chrome_driver_path = '/Users/sonal/Code/WebDemo-master/docs/chromedriver'
