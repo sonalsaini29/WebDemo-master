@@ -15,4 +15,6 @@ Get Details
     ${body}=    create dictionary   FirstName=Sonal  LastName=Saini
     ${header}=      create disctionary  Content-Type=application/json
     ${response}=     post request  mysession /register   data=${body}    header=${header}
-    log to console  ${response.}
+    log to console  ${response.Content}
+    log to console  ${response.header}
+    log to console  ${response.status_code}
