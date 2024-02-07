@@ -18,3 +18,4 @@ Get Details
     log to console  ${response.Content}
     log to console  ${response.header}
     log to console  ${response.status_code}
+    
