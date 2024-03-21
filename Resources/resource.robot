@@ -17,7 +17,11 @@ ${LOGIN URL}      https://www.guru99.com/using-robot-api-selenium.html
 
 *** Keywords ***
 Open Browser To Login Page
-    Open Browser    ${LOGIN URL}    ${BROWSER}
+    ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+#    Call Method    ${options}    add_argument    headless
+    Call Method    ${options}    add_argument    disable-gpu
+    Call Method    ${options}    add_argument    disable-infobars
+    Open Browser    ${LOGIN URL}    ${BROWSER}    options=${options}
     Maximize Browser Window
     Capture Page Screenshot    
     Set Selenium Speed    ${DELAY}

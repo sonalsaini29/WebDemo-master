@@ -1,6 +1,8 @@
 *** Settings ***
 Documentation     A test suite with a GET request in Robot framework.
-...               This test is functionally identical to the example
+...               This test is functionally identical to the example in
+Resource          Resources/resource.robot
+Library     request
 Library     Requestslibrary
 Library     Collections
 
@@ -11,11 +13,9 @@ ${base_url}     http://restapi.demoqa.com/customer
 Get Details
     create session  mysession   ${base_url}
     ${body}=    create dictionary   FirstName=Sonal  LastName=Saini
-    ${header}=      create dictionary  Content-Type=application/json
-    ${response}=     post request  mysession /register   json=${body}    headers=${header}
-    log to console  ${response.content}
-    log to console  ${response.headers}
+    ${header}=      create disctionary  Content-Type=application/json
+    ${response}=     post request  mysession /register   data=${body}    header=${header}
+    log to console  ${response.Content}
+    log to console  ${response.header}
     log to console  ${response.status_code}
-
-*** Keywords ***
-
+    
