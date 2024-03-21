@@ -10,7 +10,7 @@ Resource          /Users/sonal/Code/WebDemo-master/Resources/xpath.robot
 
 *** Variables ***
 ${BROWSER}        chrome
-${DELAY}          0
+${DELAY}          0.3
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
 ${LOGIN URL}      https://www.guru99.com/using-robot-api-selenium.html
@@ -61,6 +61,7 @@ RPA header is reflected page should be open
     Log To Console    User is able to navigate to RPA
 
 Close the pop-up screen
+    Sleep  5s
     Wait Until Element Is Visible    ${pop-up-agree_btn}    20
     Click Element    ${pop-up-agree_btn}
     Log To Console    User clicked on Agree Button
