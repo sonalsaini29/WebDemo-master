@@ -33,7 +33,7 @@ class PlatformInstaller:
         # Install common dependencies
         PlatformInstaller.install_dependencies()
 
-    def install_dependencies(self):
+    def install_dependencies():
         try:
             result = subprocess.run(["pip", "install", "-r", file_path], capture_output=True, text=True)
             print(result.stdout)
