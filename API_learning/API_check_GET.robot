@@ -31,5 +31,5 @@ Get user details from the gotest website
 Get user details from the gotest website using python file
     [Documentation]    Getting users details using REST API og gorest
     [Tags]        GET_API_1
-    ${output}    Get Users List
+    ${output}=    Get Users List
     Log to console     "\n The list of users are being listed"
